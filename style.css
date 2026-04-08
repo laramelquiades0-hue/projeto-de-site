@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
 
-</style>* {
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Lavishly Yours';
 }
 
 header {
@@ -14,30 +15,82 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    height: 110px;
+    align-items: center;
+    width: 95%;
+    margin: auto;
 }
 
 ul {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 40%;
+    gap: 50px;
     list-style: none;
+    margin-right: 50;
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Lavishly Yours';
     font-size: 20px;
     border: 2px solid;
     border-radius: 0px 20px;
     padding: 20px;
 }
-a:hover{
+
+a:hover {
     background-color: #ffffff;
     color: #3B929C;
-} 
+}
 
-.icones{
+.icones {
     padding: 10px 40px;
 }
+
+#banner {
+    width: 1400px;
+}
+
+#banner__image {
+    width: 1400px;
+    margin-top: 10px;
+}
+
+#reservas {
+    width: 1400px;
+    height: 200px;
+    border: 2px dashed #3B929C;
+    color: #3B929C;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.area__banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reservas__botao {
+    padding: 20px 60px;
+    color: #ffffff;
+    background-color: #3B929C;
+    border: nome;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+#reservas__titulo {
+    margin-top: 15px;
+}
+.area__sobre{
+    display: flex;
+    width: 1400;
+    margin: auto;
+}
+.sobre{
+    color: #3B929C;
+    width: 500px;
+}
+.so
