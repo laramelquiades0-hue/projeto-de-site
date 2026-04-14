@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-:root{
-    --cor-principal:#3B929C;
-    --cor-segundario:#FFFFFF;
-    --cor-botao:#E78887;
 
+:root {
+    --cor-principal: #3554b9;
+    --cor-segundario: #f4e5e1;
+    --cor-botao: #81bef0;
+    --largura-principal: 1600px
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans';
@@ -19,7 +21,7 @@ header {
 }
 
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,13 +30,13 @@ nav{
     margin: auto;
 }
 
-ul{
+ul {
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-a{
+.icones {
     text-decoration: none;
     color: var(--cor-segundario);
     font-size: 25px;
@@ -43,32 +45,32 @@ a{
     border-radius: 0 20px;
 }
 
-a:hover{
+.icones:hover {
     background-color: var(--cor-segundario);
-    color:var(--cor-principal);
-}
-
-a:focus{
-    background-color:  var(--cor-segundario);
     color: var(--cor-principal);
 }
 
-.icones{
-    padding: 10px 50px; 
+.icones:focus {
+    background-color: var(--cor-segundario);
+    color: var(--cor-principal);
+}
+
+.icones {
+    padding: 10px 50px;
 }
 
 
-#banner{
-    width: 1400px;
+#banner {
+    width: var(--largura-principal);
 }
 
-#banner__image{
+#banner__image {
     margin-top: 10px;
-    width: 1400px;
+    width: var(--largura-principal);
 }
 
 #reservas {
-    width: 1400px;
+    width: var(--largura-principal);
     height: 144px;
     border: 2px dashed var(--cor-principal);
     color: var(--cor-principal);
@@ -77,15 +79,15 @@ a:focus{
     margin-top: 10px;
 }
 
-.area-banner{
+.area-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#reservas__botao{
+#reservas__botao {
     padding: 20px 60px;
-    color:var(--cor-segundario);
+    color: var(--cor-segundario);
     font-size: 22px;
     background-color: var(--cor-principal);
     border: none;
@@ -93,54 +95,56 @@ a:focus{
     margin-top: 15px;
 }
 
-#reservas__botao:hover{
+#reservas__botao:hover {
     background-color: var(--cor-botao);
-    color:var(--cor-segundario);
+    color: var(--cor-segundario);
 }
 
-#reservas__titulo{
+#reservas__titulo {
     margin-top: 15px;
 
 }
 
-.area-sobre{
+.area-sobre {
     display: flex;
-    width: 1400px;
-    margin:20px auto;
+    width: var(--largura-principal);
+    margin: 20px auto;
     justify-content: space-around;
 }
 
-.sobre{
+.sobre {
     color: var(--cor-principal);
     width: 500px;
 }
 
-.sobre__foto{
+.sobre__foto {
     width: 500px;
 }
-.sobre__titulo{
+
+.sobre__titulo {
     margin-top: 30px;
     font-size: 50px;
 }
- .sobre__texto{
+
+.sobre__texto {
     margin-top: 30px;
     font-size: 30px;
- }
+}
 
- .area-busca{
+.area-busca {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+}
 
- .catalogo-titulo{
+.catalogo-titulo {
     font-size: 50px;
-    color:var(--cor-principal);
+    color: var(--cor-principal);
     margin-bottom: 50px;
- }
+}
 
- .busca{
+.busca {
     display: flex;
     width: 764px;
     height: 40px;
@@ -148,35 +152,35 @@ a:focus{
     border-radius: 20px;
     padding: 5px;
     justify-content: center;
- }
- .busca__campo{
-    flex: 1 ;
+}
+
+.busca__campo {
+    flex: 1;
     border: none;
     outline: none;
     font-size: 25px;
- }
+}
 
- .busca__botao{
+.busca__botao {
     font-size: 30px;
     border: none;
     color: var(--cor-principal);
     background: none;
- }
+}
 
- .bordados > a > img{
+.bordados>a>img {
     width: 400px;
     border-radius: 20px;
- }
+}
 
- .bordados{
+.bordados {
     text-align: center;
- }
+}
 
- .catalogo{
-    margin:100px  auto;
-    width: 1400px;
+.catalogo {
+    margin: 100px auto;
+    width: var(--largura-principal);
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
- }
- 
+}
