@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>bordados da Tia Sônia</title>
 
 </head>
-
 <body>
     <header>
-        <nav class="area-de-navegacao">
+        <nav class="area-navegacao">
             <img class="logo" src="img/logo-tia-sonia.png" alt="Logo do site" width="150px">
             <ul>
-                <li><a class="icones" href="#"><i class="fa-solid fa-house-chimney"></i></a></li>
-                <li><a class="icones" href="#"><i class="fa-solid fa-scissors"></i></a></li>
+                <li><a class="icones" href="#home"><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li><a class="icones" href="#bordados"><i class="fa-solid fa-scissors"></i></a></li>
                 <li><a class="icones" href="#"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
-                <li><a class="icones" href="#"><i class="fa-solid fa-user-gear"></i></a></li>
+                <li><a class="icones" href="login.html"><i class="fa-solid fa-user-gear"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <article class="area-banner">
+        <article class="area-banner" id="home">
             <section id="banner">
                 <img src="img/banner.png" alt=" Banner bordados da tia sônia" id="banner__image">
             </section>
@@ -39,18 +35,16 @@
         <article class="area-sobre">
             <section class="sobre">
                 <h1 class="sobre__titulo">Conheça a Tia Sônia</h1>
-                <p class="sobre__texto">A tia Sônia está super feliz em ter você por aqui. Ela borda todo os dias e ama
-                    o que faz, se você gosta de bordados como ela, ou conhece alguém que amaria receber um bordado,
-                    visite o seu catálogo e faça uma reserva. </p>
+                <p class="sobre__texto">A tia Sônia está super feliz em ter você por aqui. Ela borda todo os dias e ama o que faz, se você gosta de bordados como ela, ou conhece alguém que amaria receber um bordado, visite o seu catálogo e faça uma reserva. </p>
             </section>
             <section class="sobre">
-                <img class="sobre__foto" src="img/tia-sonia.png"
-                    alt="Mulher com cabelos grisalhos em um jardim de rosas.">
+                <img class="sobre__foto" src="img/tia-sonia.png" alt="Mulher com cabelos grisalhos em um jardim de rosas.">
             </section>
         </article>
+        <hr>
 
-        <article class="area-busca">
-            <h2 class="catalogo-titulo">Catálogo de bordados</h2>
+        <article class="area-busca" id="bordados" >
+            <h2 class="catalogo-titulo">Catálogo de Bordados</h2>
             <section>
                 <form class="busca">
                     <input type="text" class="busca__campo">
@@ -99,8 +93,12 @@
                 <h3>Bordado 06</h3>
             </section>
         </article>
-    </main>
-
+    </main> 
+    <footer class="rodape">
+        <nav class="nav-rodape">   
+        <p>A Tia Sônia agradece sua visita.Ficou alguma dúvida? Entre em contato com ela <a href="https://w.app/bordados-tia-sonia" target="_blank">por aqui</a></p>
+        <p>Todos os direitos reservados ©</p>
+        </nav>
+    </footer>
 </body>
-
 </html>

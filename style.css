@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --cor-principal: #3554b9;
-    --cor-segundario: #f4e5e1;
-    --cor-botao: #81bef0;
-    --largura-principal: 1600px ;
-    --largura-celular:430px;
+    --cor-principal: #3B929C;
+    --cor-secundaria: #FFFFFF;
+    --cor-botao: #E78887;
+    --largura-principal: 84vw;
+    --largura-celular: 100vw;
 }
 
 * {
@@ -14,15 +14,24 @@
     font-family: 'Josefin Sans';
 }
 
+#home {
+    scroll-margin-top: 110px;
+}
+
+#bordados {
+    scroll-margin-top: 140px;
+}
+
 header {
     background-color: var(--cor-principal);
     width: 100%;
-    height: 110px;
+    height: 12vh;
     position: fixed;
+    top: 0;
 }
 
 
-.area-de-navegacao {
+.area-navegacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,25 +48,26 @@ ul {
 
 .icones {
     text-decoration: none;
-    color: var(--cor-segundario);
+    color: var(--cor-secundaria);
     font-size: 25px;
-    border: 2px solid var(--cor-segundario);
-    padding: 10px;
+    border: 2px solid var(--cor-secundaria);
     border-radius: 0 20px;
+    padding: 10px 50px;
 }
 
 .icones:hover {
-    background-color: var(--cor-segundario);
-    color: var(--cor-principal);
+    background-color: var(--cor-botao);
+    color: var(--cor-secundaria);
+    border: none;
 }
 
 .icones:focus {
-    background-color: var(--cor-segundario);
+    background-color: var(--cor-secundaria);
     color: var(--cor-principal);
 }
 
-.icones {
-    padding: 10px 50px;
+main {
+    margin-top: 110px;
 }
 
 
@@ -73,7 +83,7 @@ ul {
 #reservas {
     width: var(--largura-principal);
     height: 144px;
-    border: 2px dashed var(--cor-principal);
+    border: 3px dashed var(--cor-principal);
     color: var(--cor-principal);
     text-align: center;
     font-size: 20px;
@@ -88,7 +98,7 @@ ul {
 
 #reservas__botao {
     padding: 20px 60px;
-    color: var(--cor-segundario);
+    color: var(--cor-secundaria);
     font-size: 22px;
     background-color: var(--cor-principal);
     border: none;
@@ -98,7 +108,7 @@ ul {
 
 #reservas__botao:hover {
     background-color: var(--cor-botao);
-    color: var(--cor-segundario);
+    color: var(--cor-secundaria);
 }
 
 #reservas__titulo {
@@ -109,7 +119,7 @@ ul {
 .area-sobre {
     display: flex;
     width: var(--largura-principal);
-    margin: 20px auto;
+    margin: 40px auto;
     justify-content: space-around;
 }
 
@@ -183,101 +193,164 @@ ul {
     width: var(--largura-principal);
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    justify-content: space-around;
+    gap: 10px;
 }
 
-@media (max-width:430px) {
-    header{ 
-        width: 430px;
-        height: 90px;
+h3 {
+    color: var(--cor-principal);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--cor-principal);
+    width: var(--largura-principal);
+    margin: auto;
+}
+
+
+.rodape{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-rodape p {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 430px) {
+
+    header {
+        width: var(--largura-celular);
+        height:10vh;
+        position: fixed;
+        top: 0;
     }
 
-
-    .area-de-navegacao {
-        width: 430px;
-        height: 90px;
+    .area-navegacao {
+        width: var(--largura-celular);
+        height:10vh;
         justify-content: center;
     }
 
-    ul {
-        gap: 15px;
+    .logo{
+        display: none;
     }
 
-
-    .logo {
-        display: none;
+    ul{
+        gap: 15px;
     }
 
     .icones{
         font-size: 30px;
         border: none;
-        padding: 25px;
+        padding: 20px;
     }
-}
+    .icones:hover{
+        background-color: initial;
+        border: initial;
+    }
 
-.icones:hover{
-    background-color: none;
-    color: none;
-}
+    .icones :focus{
+        border-radius: 0;
+        border: initial;
+    }
 
-#banner {
-    width: var(--largura-celular);
-}
+    .icones:active{
+        border: initial;
+    }
 
-#banner__image{
-    width: var(--largura-celular);
-    margin-top: 100px;
-}
+    #banner{
+        width: var(--largura-celular);
+    }
 
-#reservas{
-    width:400px;
-    border-width: 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#reservas_titulo{
-    font-size: 22px;
-}
+    #banner__image{
+        width: var(--largura-celular);
+    }
 
-#reservas_botao{
-    padding: 10px 15px;
-    font-size: 18px;
-    border-radius: 8px;
-}
-.area-sobre{
-    flex-direction: column;
-}
+    #reservas{
+        width: 390px;
+        border-width: 2px;
+    }
 
-.sobre{
-    width: var(--largura-celular);
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-}
-.sobre__titulo {
-font-size: 35px;
-text-align: center;
-}
-.busca{
-    width: 350px;
-}
-.area-busca{
-    width: var(--largura-celular);
-}
-.sobre__texto{
-    font-size: 20px;
-    padding: 20px;
-}
-.catalogo-titulo{
-    font-size: 35px;
-}
-.catalogo{
-    width: var(--largura-celular);
-    margin: 40px 0 0 0;
-    gap: 10px;
-    justify-content: center;
-}
-.bordados>a>img{
-    width: 200px;
+    #reservas__titulo{
+        font-size: 22px;
+    }
+
+    #reservas__botao{
+        padding: 10px 15px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    .area-sobre{
+        flex-direction: column;
+        width: var(--largura-celular);
+    }
+    .sobre{
+        width: var(--largura-celular);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre__titulo{
+        font-size: 35px;
+    }
+
+    .sobre__texto{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .sobre__foto{
+        width: 400px;
+        border-radius: 100px;
+    }
+    hr{
+        width: 400px;
+    }
+    .area-busca{
+        width: var(--largura-celular);
+    }
+
+    .busca{
+        width: 350px;
+    }
+
+    .catalogo-titulo{
+        font-size: 35px;
+    }
+
+    .catalogo{
+        width: var(--largura-celular);
+        align-content: space-evenly;
+        height: 65vh;
+    }
+ 
+  
+    .bordados >a > img {
+        width: 200px;
+    }
+
+
+    main{ 
+        margin-top: 80px;
+    }
+
+   .rodape{
+    position: relative;
+       top: 60vh;
+    }
+
+    .rodape p{
+        font-size: 1rem
+    }
 }
